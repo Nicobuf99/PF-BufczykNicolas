@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/logoatp.webp"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ideas | ATP WORLD TOUR | Todo lo que necesitas saber sobre Tenis</title>
+</head>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top items-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./imagenes/logoatp.webp" alt="Logo ATP" class="logo-nav"></a>
+        <button class="navbar-toggler btn-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./jugadores.html">Jugadores</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Competencias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./gs.html">Grand Slams</a></li>
+                <li><a class="dropdown-item" href="./torneosatp.html">Torneos ATP</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./ideas.html">Ideas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-ideas">
+    <h1 class="h1-ideas">AYUDANOS A MEJORAR</h1>
+    <p class="p-ideas">Tu opinión cuenta, decinos a traves de este formulario que podemos agregarle a la pagina o que cambios te gustaría ver</p>
+    <div class="mb-3 form-ideas">
+      <label for="exampleFormControlInput1" class="form-label"><h2>Email</h2></label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3 form-ideas">
+      <label for="exampleFormControlTextarea1" class="form-label"><h2>Opinión</h2></label>
+      <textarea class="form-control" placeholder="Dejanos acá tu comentario" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary boton">Enviar</button>
+  </section>
+
+  <footer class="futer">
+    <h3>Nuestras Redes Sociales</h3>
+    <ul>
+      <li><a href="https://www.instagram.com/atptour/?hl=es" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfdJREFUSEvNVUFO20AUfW8WnnrMAjbdxpyA9AS0m24bDlAp3IAbEE5QsWPXcALKsqumJyA9QaNeIFAlNhO186sxdpi4IXEqRXQky9L4+7///p/3htjy4pbz43kA8jxPlXOnINsA/LNqDSEypMh5tLMzrAf+xWCW510R+egDBfhK4NYnWIpAtgXYJXDov5M8juK4H8YuAMwmk7YodeMTa2s73Nu7bTKjgrHIJwAHdO5VyGQBwE6nfZCdyNq0SfJZnr8XkTMAd448UiLfIXKpk6RbFbYIkGUjAUYvjHldr9xOpx0odVDsOzfUSXJ9P5m8pVKfAfzQxrTus2xAoKWN2X8KQAicR8acVAEyHu/OtP5SHzaBgQIufon8VEq9jOL4sgQ41MbMC68zEIic6STpVQA2y/yAU4h0dZL4PqNgQ/YJ3ETGvKliNwYoE11B5KhKXiWbn7bg278A9ECehpRrrRuHjP9LAN/r7bWoGOjDkFvlkK/9Xtn/DwJ8C490oxY9cUwHXqWhNpapvQnAaqE9Gp8XWnFkw1UCpNqYdLnQHqziXWTtfhOrCJOXfrTaKiqz8yr9TR7HcTzawOyuvNpXml0wwMKuPZB4uyaX2jVFCs8SoHivteu5Sr1tkycg/Y+tNSzuAAzoXK/RhdOkJZvEPM+dvEmF62L/AMLPYygVp7o+AAAAAElFTkSuQmCC"/></a></li>
+      <li><a href="https://www.youtube.com/c/ATPTour/videos" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS1JREFUSEvtldFRwkAQhv/lIWcOZkgH2oF2IFaAHUAH0gGWgBUoHWgFYgfaAR2AD1xAZ/I7dxKGOCZ3RPPGvmZ3v/v/vb0IGg5puD+OAK/DBYvSNO21yBsBEgIJgAtvB8D6PLN5JOdC3kWdzmtetwNsmz+HNPTlZCJXcRw76A6wMeYRQN9XHPj9SWl9XQCsjZkJcBnYoDKNwMuJ1r2fClhVZWW3yAcApyGHUFo7d/YtqgTkBZvV6hYiIwDdKlBtgLsti0XyEUUTiAzKIH8GfCo1JmCV/Bq1AWtjRgKM8b0npXEwYDvkewBnAUN+V1q7A+wP2W7feUCxN6Xsmv7fopFT1W4PCwoafyoszUGybEgR5/MBm/1GYCnAMhOZ5O9QQYHX2JoJxz+a17jGLfoCb614GbndQyMAAAAASUVORK5CYII="/></a></li>
+      <li><a href="https://twitter.com/ATPTour_ES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaJJREFUSEvdVe1RwkAQ3ZcZEi4wo1QgHRgqECswVqBWAFYgVGBKoANDBdKB0EGoAJghicHx1jknMCGfDAx/uJ93u+/tvt28gM58cGZ8ujACXiyu0Woty2RTMZt6vUfMNhFZROQRMDKEGKq8yPdto9Fwtxh7EkVB4EFKW282p0Uk30EwAdFdzrvKsZjotW6aToZgs15brGlfRLSUwKMQYpIGScQU8U+JeQZmZ1tkugNOMDu1KBomJVPtE/BRIuFKAnayuDSB0u4hBeACcEHk/TJ3QPReQjA2TFPNZnd2BGp4P7VamzVNkdwc9X0wD41GY1BIsDGMxVHAcVJ6wOo6s0VHV6/ApOykN3CPIN4StT1XR3QyN0yznc7LWEW8KU9EtDesKsI8eTISqYswDLsa82cVYOp9rkeRlecCuWYX+f6AgLdDSSRwn/dh5nawBf33HF13CFByFR4AL7oQo6KA3A5imXoVc1gB6JeB73UQgyqTuj1AmrEE+kIIryo208EmDJ9Zyi4Byoq3ZDMmUjbuMuAeApzwtKoaTnu/sF/maWLkZ/8BFKqkGccwIW8AAAAASUVORK5CYII="/></a></li>
+      <li><a href="https://www.tiktok.com/@tennistv?lang=es" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZJJREFUSEu1le9xgkAQxd/yAQI4k7ECLSFWkKSCWIJWENJBUkFMBTEVhBJMB6aCmA50Rg9hRjazDhBA/g5634Dl/d7u7e0RLrzowvpoDdgrtSDgNjK2NCxrVGWyKwC67/ep31+XQToDwPxi2Pbz5QDAGsxTw7bdIkj3DP5VXSJycTh8673eMn59TsBRk4GvK8u6OxdgEwldx4KtAIHnTRgYgPkmJHoyTXOVblMRM3x/HOi6A6IJgEEjgL/bjUH0CmAYOwuJ7k3TXOQB6XJIrOd5QzFSWqJI/DPfEU0B+f9ONtlXSuiDdKCkrYWhI91Rl0El4Fhz5vckiPnDsG2pbbI6AXyl5LA8RGq/hmUlexATOgEyg6zAvUDOBwAKJ2V6j/ItWTsqAqVmDDwmLUY01U1zHj+fdFhJlmlQpoukhzXmn4wT5jk0bSWHDcA483MYjtJzpzaDqMYOAXLIqlcD9yJQOOz2SlVCCHjTLcup81AKkA/BdnvDmiYXiUxGGWYbMLvEPKsrS+keNHHUNqb1fdAW8AdTs9gZ+y0C/wAAAABJRU5ErkJggg=="/></a></li>
+    </ul>
+  </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

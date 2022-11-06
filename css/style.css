@@ -1,0 +1,272 @@
+body{
+    background-image: url(../imagenes/fondodepantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.items-nav {
+    background-color: rgb(88, 175, 204);
+}
+
+.logo-nav {
+    width: 50px;
+    height: 45px;
+    border: white 1px solid;
+}
+
+.items-nav div li a{
+    font-weight: bold;
+}
+
+.btn-navbar{
+    background-color: white;
+}
+
+.h1-index, 
+.h1-ideas, 
+.h1-jugadores, 
+.h1-gs,
+.h1-torneos,
+.h2-gs,
+.h2-torneos,
+.h2-video-jugadores,
+.h2-video-gs {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.noticias-index,
+.card-jugadores{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 1s;
+    width: 25rem;
+}
+
+.noticias-index:hover{
+    box-shadow: 5px 2px 2px black;
+}
+
+.noticias-index img{
+    height: 250px;
+}
+
+.noticias-index h2{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+p::first-letter{
+    font-size: x-large;
+}
+
+.boton{
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+.card-jugadores:hover , 
+.card-finals:hover, 
+.card-davis:hover{
+    box-shadow: 5px 2px 2px black;
+    transform: scale(1.02);
+}
+
+.card-jugadores img{
+    height: 260px;
+}
+
+.video-jugadores, 
+.video-gs{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-video-jugadores, 
+.h2-video-gs{
+    margin: 20px;
+}
+
+.youtube-jugadores, 
+.youtube-gs{
+    border: 2px solid white;
+    transition: all 1.5s;
+}
+
+.youtube-jugadores:hover, 
+.youtube-gs:hover{
+    transform: scale(1.1);
+}
+
+.card-text, 
+.titulo-noticias, 
+.card-title{
+    color: black;
+}
+
+.accordion {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
+.cuerpo-acordeon img{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.contenido-acordeon , 
+.cuerpo-acordeon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.contenido-acordeon p, 
+.cuerpo-acordeon p{
+    margin-left: 10px;
+}
+
+.section-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.tabla-gs .tabla-grande{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+    border: 2px solid white;
+}
+
+.titulo-table{
+    text-align: center;
+    margin-top: 15px;
+}
+
+th, td{
+    color: white;
+    text-align: center;
+}
+
+td a{
+    color: white;
+    text-decoration: none;
+}
+
+.tabla-pequena{
+    display: none;
+}
+
+.section-otrascom{
+    margin-top: 20px;
+}
+
+.section-otrascom h2{
+    margin-bottom: 40px;
+}
+
+.card-finals, 
+.card-davis{
+    width: 25rem;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.section-ideas {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.section-ideas input,
+.section-ideas textarea {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.futer h3{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.futer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.futer ul li{
+    transition: all 1.5s;
+}
+
+.futer ul li:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 700px){
+    .noticias-index, .card-jugadores, .card-davis , .card-finals{
+        width: 80%;
+    }
+    .h2-video-jugadores{
+        text-align: center;
+        align-content: center;
+    }
+    .youtube-jugadores, 
+    .youtube-gs{
+        width: 80%;
+    }
+    .contenido-acordeon, 
+    .cuerpo-acordeon{
+        flex-direction: column;
+    }
+    .tabla-grande{
+        display: none;
+    }
+    .tabla-pequena{
+        display: block;
+        width: 75%;
+    }
+    .section-ideas input,
+    .section-ideas textarea {
+        width: 80%;
+    }
+    .futer ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .futer ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
