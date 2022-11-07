@@ -1,0 +1,36 @@
+@media screen and (max-width: 700px){
+    .noticias-index, .card-jugadores, .card-davis , .card-finals{
+        width: 80%;
+    }
+    .h2-video-jugadores{
+        text-align: center;
+        align-content: center;
+    }
+    .youtube-jugadores, 
+    .youtube-gs{
+        width: 80%;
+    }
+    .contenido-acordeon, 
+    .cuerpo-acordeon{
+        flex-direction: column;
+    }
+    .tabla-grande{
+        display: none;
+    }
+    .tabla-pequena{
+        display: block;
+        width: 75%;
+    }
+    .section-ideas input,
+    .section-ideas textarea {
+        width: 80%;
+    }
+    .futer ul{
+        flex-direction: column;
+        align-items: center;
+        li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

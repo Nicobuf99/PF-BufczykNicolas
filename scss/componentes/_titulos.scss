@@ -1,0 +1,11 @@
+.h1-index, 
+.h1-ideas, 
+.h1-jugadores, 
+.h1-gs,
+.h1-torneos,
+.h2-gs,
+.h2-torneos,
+.h2-video-jugadores,
+.h2-video-gs {
+    @extend %titulos;
+}

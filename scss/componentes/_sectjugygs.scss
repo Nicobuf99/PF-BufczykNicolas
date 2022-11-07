@@ -1,0 +1,33 @@
+.video-jugadores{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .h2-video-jugadores{
+        margin: 20px;
+    }
+    .youtube-jugadores{
+    border: 2px solid white;
+    transition: all 1.5s;
+    }
+    .youtube-jugadores:hover{
+    transform: scale(1.1);
+    }
+}
+
+.video-gs{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .h2-video-gs{
+        margin: 20px;
+    }
+    .youtube-gs{
+        border: 2px solid white;
+        transition: all 1.5s;
+        }
+    .youtube-gs:hover{
+        transform: scale(1.1);
+        }
+   }
