@@ -42,7 +42,6 @@ main .noticias-index {
   margin-top: 20px;
   margin-bottom: 20px;
   transition: all 1s;
-  width: 25rem;
 }
 main .noticias-index:hover {
   box-shadow: 5px 2px 2px black;
@@ -56,33 +55,33 @@ main .noticias-index h2 {
   text-align: center;
 }
 
-.card {
+.noticias-index, .card-jugadores, .card-davis, .card-finals {
   margin-top: 20px;
   margin-bottom: 20px;
   transition: all 1s;
-  width: 25rem;
+  width: 35%;
 }
-.card .card-img-top {
+.noticias-index .card-img-top, .card-jugadores .card-img-top, .card-davis .card-img-top, .card-finals .card-img-top {
   height: 250px;
 }
-.card .card-body .card-title {
+.noticias-index .card-body .card-title, .card-jugadores .card-body .card-title, .card-davis .card-body .card-title, .card-finals .card-body .card-title {
   font-size: large;
   font-weight: bold;
   text-align: center;
   color: black;
 }
-.card .card-body .card-text {
+.noticias-index .card-body .card-text, .card-jugadores .card-body .card-text, .card-davis .card-body .card-text, .card-finals .card-body .card-text {
   text-align: justify;
   color: black;
 }
-.card .card-body .card-text::first-letter {
+.noticias-index .card-body .card-text::first-letter, .card-jugadores .card-body .card-text::first-letter, .card-davis .card-body .card-text::first-letter, .card-finals .card-body .card-text::first-letter {
   font-size: x-large;
 }
-.card .card-body .boton {
+.noticias-index .card-body .boton, .card-jugadores .card-body .boton, .card-davis .card-body .boton, .card-finals .card-body .boton {
   border: 1px solid black;
   transition: all 1s;
 }
-.card .card-body .boton:hover {
+.noticias-index .card-body .boton:hover, .card-jugadores .card-body .boton:hover, .card-davis .card-body .boton:hover, .card-finals .card-body .boton:hover {
   transform: scale(1.1);
   border: 1px solid black;
 }
@@ -223,9 +222,14 @@ main .noticias-index h2 {
   transform: scale(1.5);
 }
 
+@media screen and (max-width: 800px) {
+  .card {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 700px) {
-  .noticias-index, .card-jugadores, .card-davis, .card-finals {
-    width: 80%;
+  .card {
+    width: 75%;
   }
   .h2-video-jugadores {
     text-align: center;
@@ -244,7 +248,11 @@ main .noticias-index h2 {
   }
   .tabla-pequena {
     display: block;
-    width: 75%;
+    width: 80%;
+    border: 2px solid white;
+  }
+  .tabla-pequena th, .tabla-pequena td {
+    width: 50%;
   }
   .section-ideas input,
 .section-ideas textarea {

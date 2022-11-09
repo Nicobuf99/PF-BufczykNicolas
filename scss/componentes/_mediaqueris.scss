@@ -1,6 +1,12 @@
+@media screen and (max-width: 800px){
+    .card{
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 700px){
-    .noticias-index, .card-jugadores, .card-davis , .card-finals{
-        width: 80%;
+    .card{
+        width: 75%;
     }
     .h2-video-jugadores{
         text-align: center;
@@ -19,7 +25,11 @@
     }
     .tabla-pequena{
         display: block;
-        width: 75%;
+        width: 80%;
+        border: 2px solid white;
+        th,td{
+            width: 50%;
+        }
     }
     .section-ideas input,
     .section-ideas textarea {
