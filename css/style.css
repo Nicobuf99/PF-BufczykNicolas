@@ -64,10 +64,9 @@ main .noticias-index h2 {
 .noticias-index .card-img-top, .card-jugadores .card-img-top, .card-davis .card-img-top, .card-finals .card-img-top {
   height: 250px;
 }
-.noticias-index .card-body .card-title, .card-jugadores .card-body .card-title, .card-davis .card-body .card-title, .card-finals .card-body .card-title {
+.noticias-index .card-body strong, .card-jugadores .card-body strong, .card-davis .card-body strong, .card-finals .card-body strong {
   font-size: large;
-  font-weight: bold;
-  text-align: center;
+  justify-content: center;
   color: black;
 }
 .noticias-index .card-body .card-text, .card-jugadores .card-body .card-text, .card-davis .card-body .card-text, .card-finals .card-body .card-text {
