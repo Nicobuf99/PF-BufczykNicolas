@@ -44,3 +44,17 @@
         }
     }
 }
+
+@media screen and (max-width: 350px){
+    .tabla-pequena{
+        display: none;
+    }
+    .tabla-diminuta{
+        display: block;
+        width: 80%;
+        border: 2px solid white;
+        th,td{
+            width: 50%;
+        }
+    }
+}

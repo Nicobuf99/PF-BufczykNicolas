@@ -1,8 +1,7 @@
 .noticias-index, .card-jugadores, .card-davis, .card-finals{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 20px 40px 40px;
     transition: all 1s;
-    width: 35%;
+    width: 30%;
     .card-img-top{
         height: 250px;
     }
@@ -11,6 +10,7 @@
             font-size: large;
             justify-content: center;
             color: black;
+            font-family: 'Roboto', sans-serif;
         }
         .card-text{
             text-align: justify;

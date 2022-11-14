@@ -8,10 +8,11 @@
 .h2-video-jugadores,
 .h2-video-gs {
   text-align: center;
-  text-decoration: underline;
   font-style: italic;
+  font-weight: bolder;
   margin-top: 80px;
   margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -56,10 +57,9 @@ main .noticias-index h2 {
 }
 
 .noticias-index, .card-jugadores, .card-davis, .card-finals {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px 40px 40px;
   transition: all 1s;
-  width: 35%;
+  width: 30%;
 }
 .noticias-index .card-img-top, .card-jugadores .card-img-top, .card-davis .card-img-top, .card-finals .card-img-top {
   height: 250px;
@@ -68,6 +68,7 @@ main .noticias-index h2 {
   font-size: large;
   justify-content: center;
   color: black;
+  font-family: "Roboto", sans-serif;
 }
 .noticias-index .card-body .card-text, .card-jugadores .card-body .card-text, .card-davis .card-body .card-text, .card-finals .card-body .card-text {
   text-align: justify;
@@ -89,6 +90,13 @@ main .noticias-index h2 {
   box-shadow: 5px 2px 2px black;
 }
 
+.carousel-item {
+  margin-top: 70px;
+}
+.carousel-item img {
+  height: 400px;
+}
+
 .video-jugadores {
   height: 400px;
   display: flex;
@@ -103,7 +111,7 @@ main .noticias-index h2 {
   transition: all 1.5s;
 }
 .video-jugadores .youtube-jugadores:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .video-gs {
@@ -148,20 +156,22 @@ main .noticias-index h2 {
 .section-table .tabla-gs tbody tr td a, .section-table .tabla-gs tbody tr th a, .section-table .tabla-gs thead th a {
   color: white;
   text-decoration: none;
+  transition: all 1s;
 }
 .section-table .tabla-gs tbody tr td a:hover, .section-table .tabla-gs tbody tr th a:hover, .section-table .tabla-gs thead th a:hover {
-  color: rgb(63, 63, 199);
-  text-decoration: underline;
+  color: black;
+  background-color: white;
+  transform: scale(1.1);
 }
 
-.tabla-pequena {
+.tabla-pequena, .tabla-diminuta {
   display: none;
 }
 
 .accordion {
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .contenido-acordeon,
@@ -181,6 +191,7 @@ main .noticias-index h2 {
 .contenido-acordeon p,
 .cuerpo-acordeon p {
   margin-left: 10px;
+  text-align: justify;
 }
 
 .section-ideas {
@@ -192,6 +203,7 @@ main .noticias-index h2 {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  resize: none;
 }
 .section-ideas .boton {
   border: 1px solid black;
@@ -206,6 +218,7 @@ main .noticias-index h2 {
   font-style: italic;
   text-decoration: underline;
   margin-top: 40px;
+  width: auto;
 }
 .futer ul {
   display: flex;
@@ -264,6 +277,19 @@ main .noticias-index h2 {
   .futer ul li {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .tabla-pequena {
+    display: none;
+  }
+  .tabla-diminuta {
+    display: block;
+    width: 80%;
+    border: 2px solid white;
+  }
+  .tabla-diminuta th, .tabla-diminuta td {
+    width: 50%;
   }
 }
 
