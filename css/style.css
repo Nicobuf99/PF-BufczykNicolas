@@ -10,17 +10,16 @@
   text-align: center;
   font-style: italic;
   font-weight: bolder;
-  margin-top: 80px;
+  margin-top: 90px;
   margin-bottom: 40px;
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-image: url(../imagenes/fondodepantalla.jpg);
+  background-image: url(https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  width: 100%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -34,26 +33,18 @@ body {
 }
 .items-nav div li a {
   font-weight: bold;
+  color: black;
 }
 .items-nav .btn-navbar {
   background-color: white;
 }
 
-main .noticias-index {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  transition: all 1s;
+.activo {
+  text-decoration: underline;
 }
-main .noticias-index:hover {
-  box-shadow: 5px 2px 2px black;
-}
-main .noticias-index img {
-  height: 250px;
-}
-main .noticias-index h2 {
-  font-size: large;
-  font-weight: bold;
-  text-align: center;
+
+.h1-gs {
+  margin-top: 40px;
 }
 
 .noticias-index, .card-jugadores, .card-davis, .card-finals {
@@ -64,30 +55,31 @@ main .noticias-index h2 {
 .noticias-index .card-img-top, .card-jugadores .card-img-top, .card-davis .card-img-top, .card-finals .card-img-top {
   height: 250px;
 }
-.noticias-index .card-body strong, .card-jugadores .card-body strong, .card-davis .card-body strong, .card-finals .card-body strong {
+.noticias-index .letras-tarjeta strong, .card-jugadores .letras-tarjeta strong, .card-davis .letras-tarjeta strong, .card-finals .letras-tarjeta strong {
   font-size: large;
   justify-content: center;
   color: black;
   font-family: "Roboto", sans-serif;
 }
-.noticias-index .card-body .card-text, .card-jugadores .card-body .card-text, .card-davis .card-body .card-text, .card-finals .card-body .card-text {
+.noticias-index .letras-tarjeta .p-tarjeta, .card-jugadores .letras-tarjeta .p-tarjeta, .card-davis .letras-tarjeta .p-tarjeta, .card-finals .letras-tarjeta .p-tarjeta {
   text-align: justify;
   color: black;
 }
-.noticias-index .card-body .card-text::first-letter, .card-jugadores .card-body .card-text::first-letter, .card-davis .card-body .card-text::first-letter, .card-finals .card-body .card-text::first-letter {
+.noticias-index .letras-tarjeta .p-tarjeta::first-letter, .card-jugadores .letras-tarjeta .p-tarjeta::first-letter, .card-davis .letras-tarjeta .p-tarjeta::first-letter, .card-finals .letras-tarjeta .p-tarjeta::first-letter {
   font-size: x-large;
 }
-.noticias-index .card-body .boton, .card-jugadores .card-body .boton, .card-davis .card-body .boton, .card-finals .card-body .boton {
+.noticias-index .letras-tarjeta .boton, .card-jugadores .letras-tarjeta .boton, .card-davis .letras-tarjeta .boton, .card-finals .letras-tarjeta .boton {
   border: 1px solid black;
   transition: all 1s;
+  background-color: rgb(88, 175, 204);
 }
-.noticias-index .card-body .boton:hover, .card-jugadores .card-body .boton:hover, .card-davis .card-body .boton:hover, .card-finals .card-body .boton:hover {
+.noticias-index .letras-tarjeta .boton:hover, .card-jugadores .letras-tarjeta .boton:hover, .card-davis .letras-tarjeta .boton:hover, .card-finals .letras-tarjeta .boton:hover {
   transform: scale(1.1);
   border: 1px solid black;
 }
 
 .card:hover {
-  box-shadow: 5px 2px 2px black;
+  box-shadow: 10px 4px 4px black;
 }
 
 .carousel-item {
@@ -168,7 +160,7 @@ main .noticias-index h2 {
   display: none;
 }
 
-.accordion {
+.acordeon-gs, .acordeon-torneos {
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 10px;
@@ -194,6 +186,34 @@ main .noticias-index h2 {
   text-align: justify;
 }
 
+.ao-strong {
+  color: rgb(109, 206, 238);
+}
+
+.rg-strong {
+  color: rgb(250, 172, 26);
+}
+
+.wim-strong {
+  color: rgb(14, 189, 14);
+}
+
+.uo-strong {
+  color: rgb(19, 19, 218);
+}
+
+.mil-strong {
+  color: rgb(243, 207, 1);
+}
+
+.quin-strong {
+  color: rgb(128, 126, 126);
+}
+
+.dosc-strong {
+  color: rgb(205, 127, 50);
+}
+
 .section-ideas {
   margin-left: 25px;
   margin-right: 25px;
@@ -208,13 +228,42 @@ main .noticias-index h2 {
 .section-ideas .boton {
   border: 1px solid black;
   transition: all 1s;
+  background-color: rgb(88, 175, 204);
 }
 .section-ideas .boton:hover {
   transform: scale(1.1);
 }
 
-.futer h3 {
+.boton-ideas {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 40px;
+}
+.boton-ideas:hover {
+  background-color: rgb(88, 175, 204);
+  box-shadow: 0px 15px 20px rgb(88, 175, 204);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.boton-ideas:active {
+  transform: translateY(-1px);
+}
+
+.futer p {
+  align-content: center;
   text-align: center;
+  font-size: x-large;
   font-style: italic;
   text-decoration: underline;
   margin-top: 40px;
@@ -225,13 +274,18 @@ main .noticias-index h2 {
   flex-direction: row;
   justify-content: space-evenly;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 40px;
+  padding: 0%;
 }
 .futer ul li {
   transition: all 1.5s;
 }
 .futer ul li:hover {
   transform: scale(1.5);
+}
+
+.futer-ideas {
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 800px) {
@@ -269,10 +323,6 @@ main .noticias-index h2 {
   .section-ideas input,
 .section-ideas textarea {
     width: 80%;
-  }
-  .futer ul {
-    flex-direction: column;
-    align-items: center;
   }
   .futer ul li {
     margin-top: 10px;

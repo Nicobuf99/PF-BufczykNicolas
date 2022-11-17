@@ -5,23 +5,24 @@
     .card-img-top{
         height: 250px;
     }
-     .card-body{
+     .letras-tarjeta{
         strong{
             font-size: large;
             justify-content: center;
             color: black;
             font-family: 'Roboto', sans-serif;
         }
-        .card-text{
+        .p-tarjeta{
             text-align: justify;
             color: black;
         }
-        .card-text::first-letter{
+        .p-tarjeta::first-letter{
             font-size: x-large;
         }
         .boton{
             border: 1px solid black;
-            transition: all 1s;         
+            transition: all 1s;
+            background-color: rgb(88, 175, 204);         
         }
         .boton:hover{
             transform: scale(1.1);
@@ -30,5 +31,5 @@
     } 
 }
 .card:hover{
-    box-shadow: 5px 2px 2px black;
+    box-shadow: 10px 4px 4px black;
 }

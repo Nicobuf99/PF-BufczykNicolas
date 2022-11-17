@@ -1,6 +1,8 @@
 .futer{
-    h3{
+    p{
+        align-content: center;
         text-align: center;
+        font-size: x-large;
         font-style: italic;
         text-decoration: underline;
         margin-top: 40px; 
@@ -11,11 +13,16 @@
         flex-direction: row;
         justify-content: space-evenly;
         list-style: none;
-        margin-top: 20px;
+        margin-top: 40px;
+        padding: 0%;
         li{
             transition: all 1.5s;
         &:hover{
             transform: scale(1.5);
         }}
     }
+}
+
+.futer-ideas{
+    margin-top: 100px;
 }
